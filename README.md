@@ -10,7 +10,7 @@ const sayHi = (name) => {
   console.log("Hi " + name );
 }
 
-const Rectangle = (length, width) => { 
+const rectangleArea = (length, width) => { 
   return length * width ;
 }
 
