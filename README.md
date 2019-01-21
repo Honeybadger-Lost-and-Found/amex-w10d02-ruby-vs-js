@@ -22,10 +22,12 @@ Rectangle(2, 3)
 
 // flatt an array remember !! 
 
+// Abdulrab solution 
+
 const arr = [1,[2,3,null,4],[null],5 , 1 , 2];
 const result = [];
 
-const filt =(element) => {
+const flat =(element) => {
     if ( element != null && result.indexOf(element) < 0 ){
         result.push(element)
         return element
@@ -33,7 +35,7 @@ const filt =(element) => {
 };
 
 const arr2 = arr.reduce((accumulator, currentValue) => accumulator.concat(currentValue),[]);
-arr2.filter(el => filt(el));
+arr2.filter(el => flat(el));
 
 console.log(result);
 
